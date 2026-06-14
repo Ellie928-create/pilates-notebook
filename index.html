@@ -1,269 +1,933 @@
-{
-  "version": 4,
-  "phases": [
-    {
-      "id": "warmup",
-      "label": "Warm-up",
-      "color": "#0F6E56"
-    },
-    {
-      "id": "core",
-      "label": "Core / Abs",
-      "color": "#534AB7"
-    },
-    {
-      "id": "strength",
-      "label": "Strength",
-      "color": "#993C1D"
-    },
-    {
-      "id": "stretch",
-      "label": "Stretch",
-      "color": "#3B6D11"
-    },
-    {
-      "id": "custom",
-      "label": "Other",
-      "color": "#5F5E5A"
-    }
-  ],
-  "muscles": [
-    {
-      "id": "core",
-      "label": "Core / Abs",
-      "color": "#534AB7"
-    },
-    {
-      "id": "hamstrings",
-      "label": "Hamstrings",
-      "color": "#0F6E56"
-    },
-    {
-      "id": "glutes",
-      "label": "Glutes",
-      "color": "#993C1D"
-    },
-    {
-      "id": "quads",
-      "label": "Quadriceps",
-      "color": "#854F0B"
-    },
-    {
-      "id": "back",
-      "label": "Back extensors",
-      "color": "#185FA5"
-    },
-    {
-      "id": "lats",
-      "label": "Lats",
-      "color": "#3B6D11"
-    },
-    {
-      "id": "shoulders",
-      "label": "Shoulders",
-      "color": "#993556"
-    },
-    {
-      "id": "hipflexors",
-      "label": "Hip flexors",
-      "color": "#5F5E5A"
-    },
-    {
-      "id": "calves",
-      "label": "Calves",
-      "color": "#BA7517"
-    },
-    {
-      "id": "other",
-      "label": "Other",
-      "color": "#888780"
-    }
-  ],
-  "equipment": [
-    {
-      "id": "reformer",
-      "label": "Reformer",
-      "color": "#185FA5"
-    },
-    {
-      "id": "chair",
-      "label": "Chair",
-      "color": "#3B6D11"
-    },
-    {
-      "id": "cadillac",
-      "label": "Cadillac",
-      "color": "#854F0B"
-    },
-    {
-      "id": "barrel",
-      "label": "Barrel",
-      "color": "#993556"
-    }
-  ],
-  "tagGroups": [
-    {
-      "id": "tg_level",
-      "label": "Level",
-      "color": "#185FA5",
-      "tags": [
-        {
-          "id": "t_l1",
-          "label": "Level 1"
-        },
-        {
-          "id": "t_l2",
-          "label": "Level 2"
-        },
-        {
-          "id": "t_l3",
-          "label": "Level 3"
-        }
-      ]
-    },
-    {
-      "id": "tg_exam",
-      "label": "Exam focus",
-      "color": "#993C1D",
-      "tags": [
-        {
-          "id": "t_ex1",
-          "label": "Must know"
-        },
-        {
-          "id": "t_ex2",
-          "label": "Compare equipment"
-        }
-      ]
-    }
-  ],
-  "data": [
-    {
-      "id": 1,
-      "name": "Footwork &#8212; Parallel Heels",
-      "zh": "&#36393;&#33139;&#36319;&#65288;&#24179;&#34892;&#65289;",
-      "phase": "warmup",
-      "muscles": [
-        "hamstrings",
-        "glutes",
-        "quads"
-      ],
-      "cues": {
-        "reformer": "Inhale to prepare. Exhale, press your heels into the bar and lengthen your legs long. Feel the back of your thighs connect. Inhale, bend your knees and return with control. Keep your pelvis neutral throughout.",
-        "chair": "Stand with heels on the pedal edge. Exhale, press the pedal down through your heels &#8212; control the eccentric phase. Inhale, resist the spring and return. Keep your hips square and spine upright."
-      },
-      "diff": "Reformer: supine, bilateral, spring pulls you back. Chair: upright load, eccentric challenge on return, greater balance and ankle stability demand.",
-      "customTags": {
-        "tg_level": [
-          "t_l1"
-        ],
-        "tg_exam": [
-          "t_ex1"
-        ]
-      },
-      "notes": "&#26680;&#24515;&#24202;&#33181;&#33995;&#26041;&#21521;&#23565;&#31532;&#20108;&#33139;&#36286;"
-    },
-    {
-      "id": 2,
-      "name": "Elephant",
-      "zh": "&#22823;&#35937;&#24335;",
-      "phase": "stretch",
-      "muscles": [
-        "hamstrings",
-        "back",
-        "core"
-      ],
-      "cues": {
-        "reformer": "Press your heels into the footbar, round your spine into a C-curve. Exhale, push the carriage back from your heels. Inhale, pull it in. Feel the posterior chain lengthen.",
-        "chair": "Stand facing the chair, hands on top. Hinge from your hips, spine long. Exhale, press the pedal down with one foot. Inhale, resist as you return."
-      },
-      "diff": "Reformer: bilateral, C-curve spine, decompression focus. Chair: unilateral, hip hinge (spine extended), more glute and standing leg demand.",
-      "customTags": {
-        "tg_level": [
-          "t_l1",
-          "t_l2"
-        ],
-        "tg_exam": [
-          "t_ex1",
-          "t_ex2"
-        ]
-      },
-      "notes": "&#26680;&#24515;&#24202;&#33034;&#26894;&#22291;&#24359;&#65307;&#26885;&#23376;&#33034;&#26894;&#24310;&#20280; &#8212; &#24046;&#30064;&#22823;"
-    },
-    {
-      "id": 3,
-      "name": "The Hundred",
-      "zh": "&#19968;&#30334;&#24335;",
-      "phase": "core",
-      "muscles": [
-        "core",
-        "hipflexors"
-      ],
-      "cues": {
-        "reformer": "Curl your head and chest up, scoop your abdominals in and up. Extend your legs to your working level. Pump your arms: inhale for five, exhale for five.",
-        "cadillac": "Lie supine, hold the push-through bar. Curl head and chest, legs to tabletop. Pump the arms alongside your body. Inhale 5, exhale 5."
-      },
-      "diff": "Reformer: straps load arm pump and leg position. Cadillac: bar gives proprioceptive feedback; no leg spring so core demand is higher.",
-      "customTags": {
-        "tg_level": [
-          "t_l1"
-        ],
-        "tg_exam": [
-          "t_ex1"
-        ]
-      },
-      "notes": "&#33151;&#30340;&#39640;&#24230;&#26681;&#25818;&#33145;&#37096;&#24375;&#24230;&#35519;&#25972;"
-    },
-    {
-      "id": 4,
-      "name": "Short Spine",
-      "zh": "&#30701;&#33034;&#26894;",
-      "phase": "core",
-      "muscles": [
-        "core",
-        "back",
-        "hamstrings"
-      ],
-      "cues": {
-        "reformer": "Feet in straps. Inhale, float the hips and roll overhead &#8212; knees bend toward shoulders. Exhale, articulate the spine down one vertebra at a time. Tail first, then lumbar, mid-back.",
-        "cadillac": "Legs in short loops on the rollback bar. Inhale, draw legs overhead, knees bend. Exhale, peel the spine down sequentially."
-      },
-      "diff": "Reformer: continuous spring traction &#8212; use it. Cadillac: bar height changes leverage; same articulation cues but range may differ.",
-      "customTags": {
-        "tg_level": [
-          "t_l2"
-        ],
-        "tg_exam": [
-          "t_ex2"
-        ]
-      },
-      "notes": "&#33034;&#26894;&#31680;&#31680;&#20998;&#38626;&#65292;&#19981;&#35201;&#25972;&#22602;&#33853;&#19979;"
-    },
-    {
-      "id": 5,
-      "name": "Mermaid",
-      "zh": "&#32654;&#20154;&#39770;",
-      "phase": "stretch",
-      "muscles": [
-        "core",
-        "back",
-        "shoulders"
-      ],
-      "cues": {
-        "reformer": "Sit sideways, one hand on the footbar. Inhale, reach the top arm up and over. Exhale, pull the carriage back in as you return upright. Both sitting bones grounded.",
-        "chair": "Sit sideways, hand on the pedal. Inhale, reach the opposite arm overhead and let the pedal lower slowly. Exhale, press back up as you return."
-      },
-      "diff": "Reformer: carriage moves away creating lateral traction. Chair: pedal descends under eccentric load &#8212; greater strength demand.",
-      "customTags": {
-        "tg_level": [
-          "t_l1",
-          "t_l2"
-        ],
-        "tg_exam": [
-          "t_ex2"
-        ]
-      },
-      "notes": "&#22352;&#39592;&#19981;&#38626;&#22320;&#25165;&#33021;&#30495;&#27491;&#20596;&#23624;"
-    }
-  ]
+&#65279;<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Pilates Cue Notebook</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+:root{
+  --bg:#F7F6F2;--surface:#FFFFFF;--surface2:#F0EFE9;--border:#E0DDD4;--border2:#C0BDB0;
+  --text:#1C1C1A;--text2:#68655C;--text3:#A09D94;
+  --accent:#534AB7;--accent-bg:#EEEDFE;--accent-light:#CECBF6;
+  --r:8px;--rl:14px;--header-h:56px;--bottom-h:60px;
 }
+@media(prefers-color-scheme:dark){:root{
+  --bg:#181816;--surface:#222220;--surface2:#2A2A28;--border:#363632;--border2:#525050;
+  --text:#F0EFE8;--text2:#94918A;--text3:#5C5A54;
+  --accent:#7F77DD;--accent-bg:#26215C;--accent-light:#534AB7;
+}}
+html,body{height:100%;overflow:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,sans-serif;background:var(--bg);color:var(--text);font-size:15px;display:flex;flex-direction:column}
+#app{display:flex;flex-direction:column;height:100vh;height:100dvh}
+header{height:var(--header-h);min-height:var(--header-h);display:flex;align-items:center;padding:0 1rem;gap:10px;border-bottom:1px solid var(--border);background:var(--bg);flex-shrink:0;z-index:20}
+.logo{font-size:16px;font-weight:700;letter-spacing:-.4px;flex:1}
+.logo span{color:var(--accent);font-weight:400}
+.hdr-btn{width:36px;height:36px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--text2)}
+.hdr-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#mainContent{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;overflow-x:hidden}
+nav{height:var(--bottom-h);min-height:var(--bottom-h);border-top:1px solid var(--border);display:flex;background:var(--bg);flex-shrink:0}
+.nav-tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;color:var(--text3);font-size:10px;border:none;background:transparent;font-family:inherit}
+.nav-tab svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.nav-tab.active{color:var(--accent)}
+.screen{display:none;height:100%;flex-direction:column}
+.screen.active{display:flex}
+
+/* Search & filters */
+.search-bar{padding:10px 12px;border-bottom:1px solid var(--border);background:var(--bg);flex-shrink:0}
+.search-inner{position:relative}
+.search-inner svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:16px;height:16px;stroke:var(--text3);fill:none;stroke-width:2;stroke-linecap:round}
+#searchInput{width:100%;padding:9px 10px 9px 34px;font-size:14px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);color:var(--text);font-family:inherit}
+#searchInput:focus{outline:none;border-color:var(--accent)}
+.filter-scroll{display:flex;gap:6px;padding:7px 12px;overflow-x:auto;flex-shrink:0;border-bottom:1px solid var(--border);-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.filter-scroll::-webkit-scrollbar{display:none}
+.filter-label{font-size:10.5px;font-weight:600;color:var(--text3);white-space:nowrap;align-self:center;flex-shrink:0;letter-spacing:.4px;text-transform:uppercase}
+.chip{padding:5px 12px;font-size:12.5px;border:1px solid var(--border);border-radius:20px;cursor:pointer;background:var(--surface);color:var(--text2);white-space:nowrap;font-family:inherit;flex-shrink:0;transition:all .12s}
+
+/* Cards */
+.cards-list{padding:10px 12px;display:flex;flex-direction:column;gap:10px;padding-bottom:80px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:14px;cursor:pointer;transition:border-color .12s}
+.card:active{border-color:var(--border2);background:var(--surface2)}
+.card-name{font-size:15px;font-weight:600;color:var(--text);margin-bottom:2px}
+.card-zh{font-size:12px;color:var(--text3);margin-bottom:7px}
+.tags-row{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:5px}
+.tags-row:last-child{margin-bottom:0}
+.tag{font-size:11px;padding:2px 8px;border-radius:10px;font-weight:500;display:inline-block;white-space:nowrap}
+.eq-tag{font-size:10.5px;padding:2px 8px;border-radius:6px;font-weight:700;display:inline-block;white-space:nowrap;letter-spacing:.3px;color:#fff}
+.fab{position:fixed;right:16px;bottom:calc(var(--bottom-h)+14px);width:52px;height:52px;border-radius:50%;background:var(--accent);color:#fff;border:none;font-size:26px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:15;box-shadow:0 2px 12px rgba(83,74,183,.35)}
+.empty-state{text-align:center;padding:4rem 2rem;color:var(--text3);font-size:14px}
+
+/* Detail */
+#detailScreen{background:var(--bg)}
+.detail-header{display:flex;align-items:center;gap:10px;padding:0 12px;height:var(--header-h);border-bottom:1px solid var(--border);flex-shrink:0;background:var(--bg)}
+.back-btn{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer;flex-shrink:0;color:var(--text)}
+.back-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.detail-title-text{flex:1;font-size:15px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.edit-btn{padding:7px 14px;font-size:13px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer;color:var(--text);font-family:inherit}
+.detail-body{padding:14px 14px 40px;overflow-y:auto;flex:1}
+.detail-section{margin-bottom:18px}
+.detail-label{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+.eq-tabs-row{display:flex;gap:0;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-bottom:10px}
+.eq-tab-btn{flex:1;padding:8px 4px;font-size:12px;font-weight:600;cursor:pointer;text-align:center;border:none;background:var(--surface2);color:var(--text3);font-family:inherit;border-right:1px solid var(--border)}
+.eq-tab-btn:last-child{border-right:none}
+.eq-tab-btn.active{color:#fff}
+.cue-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:12px 14px;font-size:14px;line-height:1.7;color:var(--text);border-left:4px solid var(--accent)}
+.diff-block{background:#FAEEDA;border:1px solid #EF9F27;border-radius:var(--r);padding:11px 13px;font-size:13px;line-height:1.6;color:#633806}
+@media(prefers-color-scheme:dark){.diff-block{background:#412402;border-color:#854F0B;color:#FAC775}}
+.diff-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px;opacity:.7}
+.notes-block{background:var(--surface2);border-radius:var(--r);padding:11px 13px;font-size:13px;line-height:1.6;color:var(--text2)}
+
+/* List screens (Muscles / Equipment) */
+.list-screen-body{padding:12px;overflow-y:auto;flex:1;padding-bottom:20px}
+.group-section{margin-bottom:20px}
+.group-hdr{font-size:13px;font-weight:600;padding:7px 11px;border-radius:var(--r);margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.list-item{display:flex;align-items:center;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:6px;cursor:pointer;gap:10px}
+.list-item:active{background:var(--surface2)}
+.li-name{flex:1;font-size:14px;font-weight:500}
+.li-sub{font-size:11px;color:var(--text3);font-weight:400}
+.li-arr svg{width:16px;height:16px;stroke:var(--text3);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Settings */
+.settings-body{padding:12px 12px 60px;overflow-y:auto;flex:1}
+.settings-section{margin-bottom:28px}
+.settings-title{font-size:12px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.6px;padding:0 2px;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between}
+.settings-title button{font-size:12px;padding:4px 10px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer;color:var(--text2);font-family:inherit}
+.settings-item{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);margin-bottom:5px}
+.swatch{width:20px;height:20px;border-radius:50%;flex-shrink:0;border:1px solid rgba(0,0,0,.1)}
+.si-name{flex:1;font-size:14px;font-weight:500}
+.si-count{font-size:12px;color:var(--text3)}
+.si-actions{display:flex;gap:5px}
+.si-btn{width:30px;height:30px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface2);cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--text2);font-size:13px}
+.si-btn.del:hover{background:#FCEBEB;color:#A32D2D;border-color:#F09595}
+@media(prefers-color-scheme:dark){.si-btn.del:hover{background:#501313;color:#F7C1C1;border-color:#A32D2D}}
+.add-row{display:flex;gap:7px;margin-top:6px;align-items:center}
+.add-row input[type=text]{flex:1;padding:9px 11px;font-size:14px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);color:var(--text);font-family:inherit}
+.add-row input[type=text]:focus{outline:none;border-color:var(--accent)}
+.add-row input[type=color]{width:40px;height:38px;padding:2px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer;flex-shrink:0}
+.add-row .btn-add{padding:9px 13px;font-size:13px;border:none;border-radius:var(--r);background:var(--accent);color:#fff;cursor:pointer;font-family:inherit;font-weight:600;white-space:nowrap;flex-shrink:0}
+/* Custom tag group card */
+.ctg-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);margin-bottom:10px;overflow:hidden}
+.ctg-card-head{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--border)}
+.ctg-card-title{flex:1;font-size:14px;font-weight:600}
+.ctg-tags-area{padding:10px 12px;display:flex;gap:6px;flex-wrap:wrap;min-height:36px}
+.ctg-add-row{padding:8px 12px;border-top:1px solid var(--border);display:flex;gap:7px}
+.ctg-add-row input{flex:1;padding:7px 10px;font-size:13px;border:1px solid var(--border);border-radius:var(--r);background:var(--bg);color:var(--text);font-family:inherit}
+.ctg-add-row input:focus{outline:none;border-color:var(--accent)}
+.ctg-add-row button{padding:7px 12px;font-size:13px;border:none;border-radius:var(--r);background:var(--accent);color:#fff;cursor:pointer;font-family:inherit}
+.ctg-tag{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500}
+.ctg-tag-del{background:none;border:none;cursor:pointer;font-size:13px;line-height:1;padding:0;opacity:.6}
+.ctg-tag-del:hover{opacity:1}
+.new-group-row{display:flex;gap:7px;margin-bottom:10px}
+.new-group-row input[type=text]{flex:1;padding:9px 11px;font-size:14px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);color:var(--text);font-family:inherit}
+.new-group-row input[type=text]:focus{outline:none;border-color:var(--accent)}
+.new-group-row input[type=color]{width:40px;height:40px;padding:2px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface);cursor:pointer}
+.new-group-row .btn-add{padding:9px 13px;font-size:13px;border:none;border-radius:var(--r);background:var(--accent);color:#fff;cursor:pointer;font-family:inherit;font-weight:600}
+
+/* IO */
+.io-body{padding:16px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:12px;padding-bottom:40px}
+.io-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:16px}
+.io-card h4{font-size:14px;font-weight:600;margin-bottom:6px}
+.io-card p{font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:12px}
+.io-btn{width:100%;padding:13px;font-size:15px;font-weight:500;border-radius:var(--r);cursor:pointer;font-family:inherit;display:flex;align-items:center;justify-content:center;gap:8px;border:1px solid var(--border)}
+.io-export{background:var(--accent-bg);color:#3C3489;border-color:var(--accent-light)}
+.io-import{background:#E1F5EE;color:#085041;border-color:#5DCAA5}
+@media(prefers-color-scheme:dark){.io-export{color:#CECBF6}.io-import{background:#04342C;color:#9FE1CB;border-color:#0F6E56}}
+
+/* Sheet */
+.sheet-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:50;align-items:flex-end;justify-content:center}
+.sheet-bg.open{display:flex}
+.sheet{background:var(--surface);border-radius:20px 20px 0 0;width:100%;max-width:640px;max-height:92vh;max-height:92dvh;overflow-y:auto;padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet-handle{width:36px;height:4px;background:var(--border2);border-radius:2px;margin:12px auto 0}
+.sheet-head{padding:16px 16px 0;display:flex;align-items:center;justify-content:space-between}
+.sheet-head h3{font-size:17px;font-weight:700}
+.sheet-close{width:32px;height:32px;border-radius:50%;background:var(--surface2);border:none;cursor:pointer;font-size:18px;color:var(--text2)}
+.sheet-body{padding:14px 16px}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-size:12px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.5px;margin-bottom:5px}
+.fg input[type=text],.fg textarea,.fg select{width:100%;padding:10px 12px;font-size:15px;border:1px solid var(--border);border-radius:var(--r);background:var(--bg);color:var(--text);font-family:inherit;-webkit-appearance:none}
+.fg input:focus,.fg textarea:focus,.fg select:focus{outline:none;border-color:var(--accent)}
+.fg textarea{line-height:1.6;resize:none}
+.tog-grid{display:flex;gap:7px;flex-wrap:wrap}
+.tog{padding:7px 13px;font-size:13px;border:1px solid var(--border);border-radius:var(--r);cursor:pointer;background:var(--surface2);color:var(--text2);font-family:inherit;transition:all .12s}
+.eq-cue-fields{margin-top:4px}
+.eq-cue-group{margin-bottom:12px;border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.eq-cue-head{padding:8px 12px;font-size:12px;font-weight:700;letter-spacing:.3px;color:#fff}
+.eq-cue-group textarea{border:none;border-top:1px solid var(--border);border-radius:0;background:var(--surface);width:100%;padding:10px 12px;font-size:14px;line-height:1.6;font-family:inherit;color:var(--text)}
+.sheet-footer{padding:12px 16px;border-top:1px solid var(--border);display:flex;gap:8px}
+.btn-cancel{flex:1;padding:13px;font-size:15px;border:1px solid var(--border);border-radius:var(--r);background:var(--surface2);cursor:pointer;color:var(--text);font-family:inherit}
+.btn-save{flex:2;padding:13px;font-size:15px;font-weight:600;border:none;border-radius:var(--r);background:var(--accent);cursor:pointer;color:#fff;font-family:inherit}
+.btn-del-full{width:100%;padding:13px;font-size:15px;border:1px solid #F09595;border-radius:var(--r);background:#FCEBEB;cursor:pointer;color:#A32D2D;font-family:inherit}
+@media(prefers-color-scheme:dark){.btn-del-full{background:#501313;color:#F7C1C1;border-color:#A32D2D}}
+.delete-zone{padding:0 16px 16px}
+
+/* Mini edit sheet */
+.mini-sheet{border-radius:20px 20px 0 0;width:100%;max-width:640px;background:var(--surface);padding-bottom:env(safe-area-inset-bottom,0px)}
+
+/* Toast */
+.toast{position:fixed;bottom:calc(var(--bottom-h)+20px);left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 20px;border-radius:30px;font-size:13px;z-index:200;opacity:0;transition:opacity .2s;pointer-events:none;white-space:nowrap;font-weight:500}
+.toast.show{opacity:1}
+
+/* Lock screen */
+.lock-screen{position:fixed;inset:0;background:#F7F6F2;z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:2rem}
+@media(prefers-color-scheme:dark){.lock-screen{background:#181816}}
+.lock-box{background:#fff;border:1px solid #E0DDD4;border-radius:16px;padding:2rem 1.75rem;width:min(320px,90vw);text-align:center}
+@media(prefers-color-scheme:dark){.lock-box{background:#222220;border-color:#363632}}
+.lock-logo{font-size:17px;font-weight:700;margin-bottom:6px;letter-spacing:-.3px;color:#1C1C1A}
+@media(prefers-color-scheme:dark){.lock-logo{color:#F0EFE8}}
+.lock-logo span{color:#534AB7;font-weight:400}
+.lock-sub{font-size:13px;color:#A09D94;margin-bottom:1.5rem}
+.lock-input{width:100%;padding:12px;font-size:22px;letter-spacing:6px;text-align:center;border:1px solid #E0DDD4;border-radius:8px;background:#F7F6F2;color:#1C1C1A;font-family:inherit;margin-bottom:12px}
+@media(prefers-color-scheme:dark){.lock-input{background:#2A2A28;border-color:#363632;color:#F0EFE8}}
+.lock-input:focus{outline:none;border-color:#534AB7}
+.lock-btn{width:100%;padding:13px;font-size:15px;font-weight:600;border:none;border-radius:8px;background:#534AB7;color:#fff;cursor:pointer;font-family:inherit}
+.lock-err{font-size:13px;color:#A32D2D;margin-top:10px;min-height:18px}
+</style>
+</head>
+<body>
+<div id="lockScreen" class="lock-screen">
+  <div class="lock-box">
+    <div class="lock-logo">Pilates <span>Cue Notebook</span></div>
+    <div class="lock-sub">Enter password to continue</div>
+    <input class="lock-input" type="password" id="lockInput" maxlength="20" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" onkeydown="if(event.key==='Enter')checkLock()">
+    <button class="lock-btn" onclick="checkLock()">Unlock</button>
+    <div class="lock-err" id="lockErr"></div>
+  </div>
+</div>
+<div id="app" style="display:none">
+<header>
+  <div class="logo">Pilates <span>Cue Notebook</span></div>
+  <button class="hdr-btn" onclick="showScreen('io')">
+    <svg viewBox="0 0 24 24"><polyline points="8 17 12 21 16 17"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"/></svg>
+  </button>
+</header>
+<div id="mainContent">
+
+  <!-- EXERCISES -->
+  <div id="exercisesScreen" class="screen active">
+    <div class="search-bar">
+      <div class="search-inner">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" placeholder="Search exercise, muscle, cue&#8230;" oninput="renderCards()">
+      </div>
+    </div>
+    <div id="allFilterRows"></div>
+    <div class="cards-list" id="cardsList"></div>
+    <button class="fab" onclick="openAddSheet()">+</button>
+  </div>
+
+  <!-- DETAIL -->
+  <div id="detailScreen" class="screen">
+    <div class="detail-header">
+      <button class="back-btn" onclick="backToList()"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <div class="detail-title-text" id="detailTitle"></div>
+      <button class="edit-btn" onclick="openEditSheet()">Edit</button>
+    </div>
+    <div class="detail-body" id="detailBody"></div>
+  </div>
+
+  <!-- MUSCLES -->
+  <div id="anatomyScreen" class="screen">
+    <div class="list-screen-body" id="anatomyBody"></div>
+  </div>
+
+  <!-- EQUIPMENT -->
+  <div id="equipmentScreen" class="screen">
+    <div class="list-screen-body" id="equipmentBody"></div>
+  </div>
+
+  <!-- SETTINGS -->
+  <div id="settingsScreen" class="screen">
+    <div class="settings-body" id="settingsBody"></div>
+  </div>
+
+  <!-- IO -->
+  <div id="ioScreen" class="screen">
+    <div class="io-body">
+      <div class="io-card">
+        <h4>&#128190; Export data</h4>
+        <p>&#20786;&#23384;&#25152;&#26377;&#21475;&#20196;&#36039;&#26009;&#12289;&#33258;&#35330;&#20998;&#39006;&#21644;&#27161;&#31844;&#32676;&#32068;&#25104; JSON &#27284;&#26696;&#12290;</p>
+        <button class="io-btn io-export" onclick="exportJSON()">&#11015; Export JSON</button>
+      </div>
+      <div class="io-card">
+        <h4>&#128194; Import data</h4>
+        <p>&#36617;&#20837;&#20043;&#21069;&#21295;&#20986;&#30340; JSON&#65292;&#24674;&#24489;&#20840;&#37096;&#36039;&#26009;&#12290;<br><strong style="color:#A32D2D">&#27880;&#24847;&#65306;&#26371;&#35206;&#33995;&#29694;&#26377;&#36039;&#26009;&#12290;</strong></p>
+        <label class="io-btn io-import" style="cursor:pointer">&#11014; Import JSON<input type="file" accept=".json" style="display:none" onchange="importJSON(event)"></label>
+      </div>
+      <div class="io-card" style="background:var(--surface2)">
+        <h4 style="color:var(--text2)">&#20351;&#29992;&#35498;&#26126;</h4>
+        <p>&#32232;&#36655;&#23436;&#24460;&#35352;&#24471; Export&#65292;&#19979;&#27425;&#38283;&#21855;&#24460; Import &#21363;&#21487;&#24674;&#24489;&#12290;JSON &#25165;&#26159;&#20320;&#30340;&#31558;&#35352;&#26412;&#65292;HTML &#21482;&#26159;&#24037;&#20855;&#12290;</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<nav>
+  <button class="nav-tab active" id="tab-exercises" onclick="showScreen('exercises')">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+    Exercises
+  </button>
+  <button class="nav-tab" id="tab-anatomy" onclick="showScreen('anatomy')">
+    <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+    Muscles
+  </button>
+  <button class="nav-tab" id="tab-equipment" onclick="showScreen('equipment')">
+    <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+    Equipment
+  </button>
+  <button class="nav-tab" id="tab-settings" onclick="showScreen('settings')">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+    Settings
+  </button>
+</nav>
+</div>
+
+<!-- EXERCISE SHEET -->
+<div class="sheet-bg" id="sheetBg">
+  <div class="sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-head"><h3 id="sheetTitle">Add exercise</h3><button class="sheet-close" onclick="closeSheet()">&#10005;</button></div>
+    <div class="sheet-body">
+      <div class="fg"><label>Exercise name (English) *</label><input type="text" id="fName" placeholder="e.g. Elephant"></div>
+      <div class="fg"><label>&#20013;&#25991;&#21517;&#31281;</label><input type="text" id="fZh" placeholder="e.g. &#22823;&#35937;&#24335;"></div>
+      <div class="fg"><label>Phase</label><div class="tog-grid" id="phaseGrid"></div></div>
+      <div class="fg"><label>Primary muscles</label><div class="tog-grid" id="muscleGrid"></div></div>
+      <div class="fg"><label>Equipment</label><div class="tog-grid" id="eqGrid"></div></div>
+      <div class="eq-cue-fields" id="eqCueFields"></div>
+      <div class="fg"><label>Key difference between equipment</label><textarea id="fDiff" rows="3" placeholder="Reformer: posterior chain. Chair: eccentric control&#8230;"></textarea></div>
+      <div id="customTagsForm"></div>
+      <div class="fg"><label>Teaching notes&#65288;&#20013;&#25991;&#21487;&#65289;</label><textarea id="fNotes" rows="2" placeholder="&#24120;&#35211;&#37679;&#35492;&#12289;&#20462;&#27491;&#25552;&#31034;&#8230;"></textarea></div>
+    </div>
+    <div class="sheet-footer">
+      <button class="btn-cancel" onclick="closeSheet()">Cancel</button>
+      <button class="btn-save" onclick="saveEntry()">Save</button>
+    </div>
+    <div class="delete-zone" id="deleteZone"></div>
+  </div>
+</div>
+
+<!-- SETTINGS MINI SHEET -->
+<div class="sheet-bg" id="settingsSheetBg">
+  <div class="sheet mini-sheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-head"><h3 id="ssTitle">Edit</h3><button class="sheet-close" onclick="closeSS()">&#10005;</button></div>
+    <div class="sheet-body" id="ssBody"></div>
+    <div class="sheet-footer">
+      <button class="btn-cancel" onclick="closeSS()">Cancel</button>
+      <button class="btn-save" onclick="saveSS()">Save</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// DEFAULT DATA
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+let phases=[
+  {id:'warmup',label:'Warm-up',color:'#0F6E56'},
+  {id:'core',label:'Core / Abs',color:'#534AB7'},
+  {id:'strength',label:'Strength',color:'#993C1D'},
+  {id:'stretch',label:'Stretch',color:'#3B6D11'},
+  {id:'custom',label:'Other',color:'#5F5E5A'}
+];
+let muscles=[
+  {id:'core',label:'Core / Abs',color:'#534AB7'},
+  {id:'hamstrings',label:'Hamstrings',color:'#0F6E56'},
+  {id:'glutes',label:'Glutes',color:'#993C1D'},
+  {id:'quads',label:'Quadriceps',color:'#854F0B'},
+  {id:'back',label:'Back extensors',color:'#185FA5'},
+  {id:'lats',label:'Lats',color:'#3B6D11'},
+  {id:'shoulders',label:'Shoulders',color:'#993556'},
+  {id:'hipflexors',label:'Hip flexors',color:'#5F5E5A'},
+  {id:'calves',label:'Calves',color:'#BA7517'},
+  {id:'other',label:'Other',color:'#888780'}
+];
+let equipment=[
+  {id:'reformer',label:'Reformer',color:'#185FA5'},
+  {id:'chair',label:'Chair',color:'#3B6D11'},
+  {id:'cadillac',label:'Cadillac',color:'#854F0B'},
+  {id:'barrel',label:'Barrel',color:'#993556'}
+];
+// Custom tag groups: [{id, label, color, tags:[{id,label}]}]
+let tagGroups=[
+  {id:'tg_level',label:'Level',color:'#185FA5',tags:[
+    {id:'t_l1',label:'Level 1'},{id:'t_l2',label:'Level 2'},{id:'t_l3',label:'Level 3'}
+  ]},
+  {id:'tg_exam',label:'Exam focus',color:'#993C1D',tags:[
+    {id:'t_ex1',label:'Must know'},{id:'t_ex2',label:'Compare equipment'}
+  ]}
+];
+
+let data=[
+  {id:1,name:'Footwork &#8212; Parallel Heels',zh:'&#36393;&#33139;&#36319;&#65288;&#24179;&#34892;&#65289;',phase:'warmup',muscles:['hamstrings','glutes','quads'],
+   cues:{reformer:'Inhale to prepare. Exhale, press your heels into the bar and lengthen your legs long. Feel the back of your thighs connect. Inhale, bend your knees and return with control. Keep your pelvis neutral throughout.',
+         chair:'Stand with heels on the pedal edge. Exhale, press the pedal down through your heels &#8212; control the eccentric phase. Inhale, resist the spring and return. Keep your hips square and spine upright.'},
+   diff:'Reformer: supine, bilateral, spring pulls you back. Chair: upright load, eccentric challenge on return, greater balance and ankle stability demand.',
+   customTags:{tg_level:['t_l1'],tg_exam:['t_ex1']},notes:'&#26680;&#24515;&#24202;&#33181;&#33995;&#26041;&#21521;&#23565;&#31532;&#20108;&#33139;&#36286;'},
+  {id:2,name:'Elephant',zh:'&#22823;&#35937;&#24335;',phase:'stretch',muscles:['hamstrings','back','core'],
+   cues:{reformer:'Press your heels into the footbar, round your spine into a C-curve. Exhale, push the carriage back from your heels. Inhale, pull it in. Feel the posterior chain lengthen.',
+         chair:'Stand facing the chair, hands on top. Hinge from your hips, spine long. Exhale, press the pedal down with one foot. Inhale, resist as you return.'},
+   diff:'Reformer: bilateral, C-curve spine, decompression focus. Chair: unilateral, hip hinge (spine extended), more glute and standing leg demand.',
+   customTags:{tg_level:['t_l1','t_l2'],tg_exam:['t_ex1','t_ex2']},notes:'&#26680;&#24515;&#24202;&#33034;&#26894;&#22291;&#24359;&#65307;&#26885;&#23376;&#33034;&#26894;&#24310;&#20280; &#8212; &#24046;&#30064;&#22823;'},
+  {id:3,name:'The Hundred',zh:'&#19968;&#30334;&#24335;',phase:'core',muscles:['core','hipflexors'],
+   cues:{reformer:'Curl your head and chest up, scoop your abdominals in and up. Extend your legs to your working level. Pump your arms: inhale for five, exhale for five.',
+         cadillac:'Lie supine, hold the push-through bar. Curl head and chest, legs to tabletop. Pump the arms alongside your body. Inhale 5, exhale 5.'},
+   diff:'Reformer: straps load arm pump and leg position. Cadillac: bar gives proprioceptive feedback; no leg spring so core demand is higher.',
+   customTags:{tg_level:['t_l1'],tg_exam:['t_ex1']},notes:'&#33151;&#30340;&#39640;&#24230;&#26681;&#25818;&#33145;&#37096;&#24375;&#24230;&#35519;&#25972;'},
+  {id:4,name:'Short Spine',zh:'&#30701;&#33034;&#26894;',phase:'core',muscles:['core','back','hamstrings'],
+   cues:{reformer:'Feet in straps. Inhale, float the hips and roll overhead &#8212; knees bend toward shoulders. Exhale, articulate the spine down one vertebra at a time. Tail first, then lumbar, mid-back.',
+         cadillac:'Legs in short loops on the rollback bar. Inhale, draw legs overhead, knees bend. Exhale, peel the spine down sequentially.'},
+   diff:'Reformer: continuous spring traction &#8212; use it. Cadillac: bar height changes leverage; same articulation cues but range may differ.',
+   customTags:{tg_level:['t_l2'],tg_exam:['t_ex2']},notes:'&#33034;&#26894;&#31680;&#31680;&#20998;&#38626;&#65292;&#19981;&#35201;&#25972;&#22602;&#33853;&#19979;'},
+  {id:5,name:'Mermaid',zh:'&#32654;&#20154;&#39770;',phase:'stretch',muscles:['core','back','shoulders'],
+   cues:{reformer:'Sit sideways, one hand on the footbar. Inhale, reach the top arm up and over. Exhale, pull the carriage back in as you return upright. Both sitting bones grounded.',
+         chair:'Sit sideways, hand on the pedal. Inhale, reach the opposite arm overhead and let the pedal lower slowly. Exhale, press back up as you return.'},
+   diff:'Reformer: carriage moves away creating lateral traction. Chair: pedal descends under eccentric load &#8212; greater strength demand.',
+   customTags:{tg_level:['t_l1','t_l2'],tg_exam:['t_ex2']},notes:'&#22352;&#39592;&#19981;&#38626;&#22320;&#25165;&#33021;&#30495;&#27491;&#20596;&#23624;'}
+];
+let nextId=6;
+let editId=null;
+let currentDetail=null;
+let activeFilters={phase:'all',muscle:'all',eq:'all'};
+let customFilters={};// {groupId: tagId|'all'}
+let selPhase='warmup';
+let selMuscles=[];
+let selEquipment=[];
+let selCustomTags={};// {groupId:[tagId,...]}
+let activeEqTab={};
+let editCues={};
+let ssType=null,ssId=null,ssGroupId=null;
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// UTILS
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function uid(){return 'id'+Date.now().toString(36)+Math.random().toString(36).slice(2,5)}
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2200)}
+function tagStyle(color,solid){return solid?`background:${color};color:#fff;border:1px solid ${color}`:`background:${color}22;color:${color};border:1px solid ${color}55`}
+function getPhase(id){return phases.find(p=>p.id===id)||{label:id,color:'#888'}}
+function getMuscle(id){return muscles.find(m=>m.id===id)||{label:id,color:'#888'}}
+function getEq(id){return equipment.find(e=>e.id===id)||{label:id,color:'#888'}}
+function getGroup(id){return tagGroups.find(g=>g.id===id)}
+function getTag(groupId,tagId){const g=getGroup(groupId);return g&&g.tags.find(t=>t.id===tagId)}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// NAVIGATION
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function showScreen(name){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  const map={exercises:'exercisesScreen',detail:'detailScreen',anatomy:'anatomyScreen',equipment:'equipmentScreen',settings:'settingsScreen',io:'ioScreen'};
+  const tabMap={exercises:'tab-exercises',anatomy:'tab-anatomy',equipment:'tab-equipment',settings:'tab-settings'};
+  document.getElementById(map[name])?.classList.add('active');
+  document.getElementById(tabMap[name])?.classList.add('active');
+  document.getElementById('mainContent').scrollTop=0;
+  if(name==='exercises')renderCards();
+  if(name==='anatomy')renderAnatomy();
+  if(name==='equipment')renderEquipment();
+  if(name==='settings')renderSettings();
+}
+function backToList(){showScreen('exercises')}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// FILTER ROWS
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function renderFilterRows(){
+  const pc={},mc={},ec={};
+  data.forEach(d=>{
+    pc[d.phase]=(pc[d.phase]||0)+1;
+    (d.muscles||[]).forEach(m=>{mc[m]=(mc[m]||0)+1});
+    Object.keys(d.cues||{}).forEach(e=>{ec[e]=(ec[e]||0)+1});
+  });
+  // custom tag counts
+  const gc={};
+  tagGroups.forEach(g=>{gc[g.id]={};g.tags.forEach(t=>{gc[g.id][t.id]=0})});
+  data.forEach(d=>{Object.entries(d.customTags||{}).forEach(([gid,tids])=>{(tids||[]).forEach(tid=>{if(gc[gid])gc[gid][tid]=(gc[gid][tid]||0)+1})})});
+
+  let html='';
+  // Phase
+  html+=`<div class="filter-scroll"><span class="filter-label">Phase</span>
+    <button class="chip" onclick="setF('phase','all')" style="${activeFilters.phase==='all'?`background:var(--accent-bg);color:#3C3489;border-color:var(--accent-light)`:''}">All</button>
+    ${phases.filter(p=>pc[p.id]).map(p=>`<button class="chip" onclick="setF('phase','${p.id}')" style="${activeFilters.phase===p.id?tagStyle(p.color,false):''}">${p.label}</button>`).join('')}
+  </div>`;
+  // Muscle
+  html+=`<div class="filter-scroll"><span class="filter-label">Muscle</span>
+    <button class="chip" onclick="setF('muscle','all')" style="${activeFilters.muscle==='all'?`background:var(--accent-bg);color:#3C3489;border-color:var(--accent-light)`:''}">All</button>
+    ${muscles.filter(m=>mc[m.id]).map(m=>`<button class="chip" onclick="setF('muscle','${m.id}')" style="${activeFilters.muscle===m.id?tagStyle(m.color,false):''}">${m.label}</button>`).join('')}
+  </div>`;
+  // Equipment
+  html+=`<div class="filter-scroll"><span class="filter-label">Equipment</span>
+    <button class="chip" onclick="setF('eq','all')" style="${activeFilters.eq==='all'?`background:var(--accent-bg);color:#3C3489;border-color:var(--accent-light)`:''}">All</button>
+    ${equipment.filter(e=>ec[e.id]).map(e=>`<button class="chip" onclick="setF('eq','${e.id}')" style="${activeFilters.eq===e.id?`background:${e.color};color:#fff`:''}">${e.label}</button>`).join('')}
+  </div>`;
+  // Custom tag groups
+  tagGroups.forEach(g=>{
+    const usedTags=g.tags.filter(t=>(gc[g.id]||{})[t.id]>0);
+    if(!usedTags.length)return;
+    const cur=customFilters[g.id]||'all';
+    html+=`<div class="filter-scroll"><span class="filter-label" style="color:${g.color}">${g.label}</span>
+      <button class="chip" onclick="setCF('${g.id}','all')" style="${cur==='all'?tagStyle(g.color,false):''}">All</button>
+      ${usedTags.map(t=>`<button class="chip" onclick="setCF('${g.id}','${t.id}')" style="${cur===t.id?tagStyle(g.color,false):''}">${t.label}</button>`).join('')}
+    </div>`;
+  });
+  document.getElementById('allFilterRows').innerHTML=html;
+}
+
+function setF(type,val){activeFilters[type]=val;renderCards()}
+function setCF(gid,val){customFilters[gid]=val;renderCards()}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// CARDS
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function renderCards(){
+  renderFilterRows();
+  const q=document.getElementById('searchInput').value.toLowerCase().trim();
+  const filtered=data.filter(d=>{
+    if(activeFilters.phase!=='all'&&d.phase!==activeFilters.phase)return false;
+    if(activeFilters.muscle!=='all'&&!(d.muscles||[]).includes(activeFilters.muscle))return false;
+    if(activeFilters.eq!=='all'&&!Object.keys(d.cues||{}).includes(activeFilters.eq))return false;
+    for(const[gid,tid]of Object.entries(customFilters)){
+      if(tid==='all')continue;
+      if(!(d.customTags&&(d.customTags[gid]||[]).includes(tid)))return false;
+    }
+    if(q){
+      const src=(d.name+(d.zh||'')+Object.values(d.cues||{}).join(' ')+(d.notes||'')+(d.muscles||[]).join(' ')).toLowerCase();
+      if(!src.includes(q))return false;
+    }
+    return true;
+  });
+  const el=document.getElementById('cardsList');
+  if(!filtered.length){el.innerHTML='<div class="empty-state">No exercises found</div>';return}
+  el.innerHTML=filtered.map(d=>{
+    const ph=getPhase(d.phase);
+    const eqs=Object.keys(d.cues||{});
+    // custom tags for this card
+    let ctHtml='';
+    tagGroups.forEach(g=>{
+      const tids=(d.customTags||{})[g.id]||[];
+      tids.forEach(tid=>{
+        const t=getTag(g.id,tid);
+        if(t)ctHtml+=`<span class="tag" style="${tagStyle(g.color,false)}">${t.label}</span>`;
+      });
+    });
+    return`<div class="card" onclick="openDetail(${d.id})">
+      <div class="tags-row"><span class="tag" style="${tagStyle(ph.color,false)}">${ph.label}</span>${ctHtml?ctHtml:''}</div>
+      <div class="card-name">${esc(d.name)}</div>
+      ${d.zh?`<div class="card-zh">${esc(d.zh)}</div>`:''}
+      <div class="tags-row">${(d.muscles||[]).map(m=>{const mu=getMuscle(m);return`<span class="tag" style="${tagStyle(mu.color,false)}">${mu.label}</span>`}).join('')}</div>
+      <div class="tags-row" style="margin-bottom:0">${eqs.map(e=>{const eq=getEq(e);return`<span class="eq-tag" style="background:${eq.color}">${eq.label}</span>`}).join('')}</div>
+    </div>`
+  }).join('');
+}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// DETAIL
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function openDetail(id){
+  currentDetail=id;
+  const d=data.find(x=>x.id===id);
+  document.getElementById('detailTitle').textContent=d.name;
+  const eqs=Object.keys(d.cues||{});
+  if(!activeEqTab[id]||!eqs.includes(activeEqTab[id]))activeEqTab[id]=eqs[0]||null;
+  renderDetail(d);showScreen('detail');
+}
+function renderDetail(d){
+  const eqs=Object.keys(d.cues||{});
+  const active=activeEqTab[d.id];
+  const ph=getPhase(d.phase);
+  let html=`<div class="detail-section">
+    <div class="tags-row" style="margin-bottom:8px"><span class="tag" style="${tagStyle(ph.color,false)}">${ph.label}</span></div>
+    ${d.zh?`<div style="font-size:13px;color:var(--text3);margin-bottom:8px">${esc(d.zh)}</div>`:''}
+    <div class="tags-row">${(d.muscles||[]).map(m=>{const mu=getMuscle(m);return`<span class="tag" style="${tagStyle(mu.color,false)}">${mu.label}</span>`}).join('')}</div>`;
+  // custom tags
+  let ctRows='';
+  tagGroups.forEach(g=>{
+    const tids=(d.customTags||{})[g.id]||[];
+    if(tids.length){
+      ctRows+=`<div class="tags-row">${tids.map(tid=>{const t=getTag(g.id,tid);return t?`<span class="tag" style="${tagStyle(g.color,false)}">${t.label}</span>`:''}).join('')}</div>`;
+    }
+  });
+  if(ctRows)html+=ctRows;
+  html+=`</div>`;
+  if(eqs.length){
+    const aeq=active?getEq(active):null;
+    html+=`<div class="detail-section"><div class="detail-label">Verbal cue by equipment</div>
+      <div class="eq-tabs-row">${eqs.map(e=>{const eq=getEq(e);const isA=active===e;return`<button class="eq-tab-btn ${isA?'active':''}" onclick="switchEqTab(${d.id},'${e}')" style="${isA?`background:${eq.color}`:'${}'}">${eq.label}</button>`}).join('')}</div>
+      ${active?`<div class="cue-block" style="border-left-color:${aeq?aeq.color:'var(--accent)'}">${esc(d.cues[active])}</div>`:''}</div>`;
+  }
+  if(d.diff&&eqs.length>1){
+    html+=`<div class="detail-section"><div class="detail-label">Key differences</div><div class="diff-block"><div class="diff-lbl">Equipment comparison</div>${esc(d.diff)}</div></div>`;
+  }
+  if(d.notes){
+    html+=`<div class="detail-section"><div class="detail-label">Teaching notes</div><div class="notes-block">${esc(d.notes)}</div></div>`;
+  }
+  document.getElementById('detailBody').innerHTML=html;
+}
+function switchEqTab(id,eq){activeEqTab[id]=eq;renderDetail(data.find(x=>x.id===id))}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ANATOMY
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function renderAnatomy(){
+  let html='';
+  muscles.forEach(m=>{
+    const exs=data.filter(d=>(d.muscles||[]).includes(m.id));
+    if(!exs.length)return;
+    html+=`<div class="group-section">
+      <div class="group-hdr" style="${tagStyle(m.color,false)}"><span>${m.label}</span><span style="font-weight:400;font-size:12px">${exs.length} exercise${exs.length>1?'s':''}</span></div>
+      ${exs.map(d=>`<div class="list-item" onclick="openDetail(${d.id});showScreen('detail')">
+        <div class="li-name">${esc(d.name)}${d.zh?`<div class="li-sub">${esc(d.zh)}</div>`:''}</div>
+        <div style="display:flex;gap:4px;flex-wrap:wrap">${Object.keys(d.cues||{}).map(e=>{const eq=getEq(e);return`<span class="eq-tag" style="background:${eq.color}">${eq.label}</span>`}).join('')}</div>
+        <div class="li-arr"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>`).join('')}
+    </div>`;
+  });
+  document.getElementById('anatomyBody').innerHTML=html||'<div class="empty-state">No exercises yet</div>';
+}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// EQUIPMENT SCREEN
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function renderEquipment(){
+  let html='';
+  equipment.forEach(eq=>{
+    const exs=data.filter(d=>Object.keys(d.cues||{}).includes(eq.id));
+    if(!exs.length)return;
+    html+=`<div class="group-section">
+      <div class="group-hdr" style="background:${eq.color};color:#fff"><span>${eq.label}</span><span style="font-weight:400;font-size:12px">${exs.length} exercise${exs.length>1?'s':''}</span></div>
+      ${exs.map(d=>{const ph=getPhase(d.phase);return`<div class="list-item" onclick="activeEqTab[${d.id}]='${eq.id}';openDetail(${d.id});showScreen('detail')">
+        <div class="li-name">${esc(d.name)}${d.zh?`<div class="li-sub">${esc(d.zh)}</div>`:''}</div>
+        <span class="tag" style="${tagStyle(ph.color,false)}">${ph.label}</span>
+        <div class="li-arr"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+      </div>`}).join('')}
+    </div>`;
+  });
+  document.getElementById('equipmentBody').innerHTML=html||'<div class="empty-state">No exercises yet</div>';
+}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// SETTINGS
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function renderSettings(){
+  function usageCount(type,id){
+    if(type==='phase')return data.filter(d=>d.phase===id).length;
+    if(type==='muscle')return data.filter(d=>(d.muscles||[]).includes(id)).length;
+    if(type==='equipment')return data.filter(d=>Object.keys(d.cues||{}).includes(id)).length;
+    return 0;
+  }
+  function simpleGroup(title,list,type){
+    return`<div class="settings-section">
+      <div class="settings-title">${title}</div>
+      ${list.map(item=>`<div class="settings-item">
+        <div class="swatch" style="background:${item.color}"></div>
+        <div class="si-name">${esc(item.label)}</div>
+        <div class="si-count">${usageCount(type,item.id)} use${usageCount(type,item.id)!==1?'s':''}</div>
+        <div class="si-actions">
+          <button class="si-btn" onclick="openSS('${type}','${item.id}')">&#9999;</button>
+          <button class="si-btn del" onclick="deleteCat('${type}','${item.id}')">&#10005;</button>
+        </div>
+      </div>`).join('')}
+      <div class="add-row">
+        <input type="text" id="newLabel-${type}" placeholder="New name&#8230;">
+        <input type="color" id="newColor-${type}" value="#534AB7">
+        <button class="btn-add" onclick="addCat('${type}')">Add</button>
+      </div>
+    </div>`;
+  }
+
+  // Custom tag groups
+  let ctgHtml=`<div class="settings-section">
+    <div class="settings-title">Custom tag groups
+      <span style="font-size:11px;color:var(--text3);font-weight:400;text-transform:none;letter-spacing:0">&#33258;&#35330;&#27161;&#31844;&#32676;&#32068;</span>
+    </div>
+    <div class="new-group-row">
+      <input type="text" id="newGroupLabel" placeholder="New group name&#8230; (e.g. Level, &#32771;&#35430;&#37325;&#40670;)">
+      <input type="color" id="newGroupColor" value="#185FA5">
+      <button class="btn-add" onclick="addGroup()">Add group</button>
+    </div>
+    ${tagGroups.map(g=>`<div class="ctg-card">
+      <div class="ctg-card-head">
+        <div class="swatch" style="background:${g.color}"></div>
+        <div class="ctg-card-title">${esc(g.label)}</div>
+        <div class="si-actions">
+          <button class="si-btn" onclick="openSS('group','${g.id}')">&#9999;</button>
+          <button class="si-btn del" onclick="deleteGroup('${g.id}')">&#10005;</button>
+        </div>
+      </div>
+      <div class="ctg-tags-area">
+        ${g.tags.map(t=>`<span class="ctg-tag" style="${tagStyle(g.color,false)}">
+          ${esc(t.label)}
+          <button class="ctg-tag-del" onclick="deleteTag('${g.id}','${t.id}')" title="Remove">&#10005;</button>
+        </span>`).join('')}
+        ${g.tags.length===0?`<span style="font-size:12px;color:var(--text3)">No tags yet &#8212; add below</span>`:''}
+      </div>
+      <div class="ctg-add-row">
+        <input type="text" id="newTag-${g.id}" placeholder="Add tag&#8230; (e.g. Level 1)">
+        <button onclick="addTag('${g.id}')">Add</button>
+      </div>
+    </div>`).join('')}
+  </div>`;
+
+  document.getElementById('settingsBody').innerHTML=
+    simpleGroup('Phase categories',phases,'phase')+
+    simpleGroup('Muscle categories',muscles,'muscle')+
+    simpleGroup('Equipment categories',equipment,'equipment')+
+    ctgHtml;
+}
+
+function addCat(type){
+  const label=document.getElementById(`newLabel-${type}`).value.trim();
+  const color=document.getElementById(`newColor-${type}`).value;
+  if(!label){showToast('Enter a name first');return}
+  const id=type+'_'+uid();
+  if(type==='phase')phases.push({id,label,color});
+  if(type==='muscle')muscles.push({id,label,color});
+  if(type==='equipment')equipment.push({id,label,color});
+  document.getElementById(`newLabel-${type}`).value='';
+  renderSettings();showToast(`${label} added &#10003;`);
+}
+
+function deleteCat(type,id){
+  const listMap={phase:phases,muscle:muscles,equipment:equipment};
+  const list=listMap[type];
+  const item=list.find(x=>x.id===id);
+  if(!item)return;
+  const count=data.filter(d=>{
+    if(type==='phase')return d.phase===id;
+    if(type==='muscle')return(d.muscles||[]).includes(id);
+    if(type==='equipment')return Object.keys(d.cues||{}).includes(id);
+  }).length;
+  if(count>0&&!confirm(`"${item.label}" is used in ${count} exercise${count>1?'s':''}. Delete anyway?`))return;
+  listMap[type]=list.filter(x=>x.id!==id);
+  if(type==='phase')phases=listMap[type];
+  if(type==='muscle')muscles=listMap[type];
+  if(type==='equipment')equipment=listMap[type];
+  renderSettings();showToast('Deleted');
+}
+
+function addGroup(){
+  const label=document.getElementById('newGroupLabel').value.trim();
+  const color=document.getElementById('newGroupColor').value;
+  if(!label){showToast('Enter a group name');return}
+  tagGroups.push({id:'tg_'+uid(),label,color,tags:[]});
+  document.getElementById('newGroupLabel').value='';
+  renderSettings();showToast(`Group "${label}" added &#10003;`);
+}
+
+function deleteGroup(gid){
+  const g=getGroup(gid);if(!g)return;
+  if(!confirm(`Delete group "${g.label}" and all its tags?`))return;
+  tagGroups=tagGroups.filter(x=>x.id!==gid);
+  data.forEach(d=>{if(d.customTags)delete d.customTags[gid]});
+  delete customFilters[gid];
+  renderSettings();showToast('Group deleted');
+}
+
+function addTag(gid){
+  const input=document.getElementById(`newTag-${gid}`);
+  const label=input.value.trim();if(!label){showToast('Enter a tag name');return}
+  const g=getGroup(gid);if(!g)return;
+  g.tags.push({id:'t_'+uid(),label});
+  input.value='';
+  renderSettings();showToast(`Tag "${label}" added &#10003;`);
+}
+
+function deleteTag(gid,tid){
+  const g=getGroup(gid);if(!g)return;
+  g.tags=g.tags.filter(t=>t.id!==tid);
+  data.forEach(d=>{if(d.customTags&&d.customTags[gid])d.customTags[gid]=d.customTags[gid].filter(x=>x!==tid)});
+  renderSettings();showToast('Tag deleted');
+}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// SETTINGS MINI SHEET (edit name/color)
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function openSS(type,id){
+  ssType=type;ssId=id;
+  const listMap={phase:phases,muscle:muscles,equipment:equipment};
+  let item;
+  if(type==='group'){item=getGroup(id);}
+  else{item=listMap[type]?.find(x=>x.id===id);}
+  if(!item)return;
+  document.getElementById('ssTitle').textContent=`Edit ${type==='group'?'group':type}`;
+  document.getElementById('ssBody').innerHTML=`
+    <div class="fg"><label>Name</label><input type="text" id="ssLabel" value="${esc(item.label)}"></div>
+    <div class="fg"><label>Color</label><input type="color" id="ssColor" value="${item.color}" style="height:44px;padding:4px 8px"></div>`;
+  document.getElementById('settingsSheetBg').classList.add('open');
+}
+function closeSS(){document.getElementById('settingsSheetBg').classList.remove('open')}
+function saveSS(){
+  const label=document.getElementById('ssLabel').value.trim();
+  const color=document.getElementById('ssColor').value;
+  if(!label){showToast('Name cannot be empty');return}
+  const listMap={phase:phases,muscle:muscles,equipment:equipment};
+  let item;
+  if(ssType==='group'){item=getGroup(ssId);}
+  else{item=listMap[ssType]?.find(x=>x.id===ssId);}
+  if(item){item.label=label;item.color=color;}
+  closeSS();renderSettings();renderCards();showToast('Saved &#10003;');
+}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// EXERCISE SHEET
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function buildFormGrids(){
+  // Phase
+  document.getElementById('phaseGrid').innerHTML=phases.map(p=>`
+    <button class="tog" onclick="selPhase='${p.id}';buildFormGrids()"
+      style="${selPhase===p.id?tagStyle(p.color,false):''}">${p.label}</button>`).join('');
+  // Muscles
+  document.getElementById('muscleGrid').innerHTML=muscles.map(m=>`
+    <button class="tog" onclick="toggleArr(selMuscles,'${m.id}');buildFormGrids()"
+      style="${selMuscles.includes(m.id)?tagStyle(m.color,false):''}">${m.label}</button>`).join('');
+  // Equipment
+  document.getElementById('eqGrid').innerHTML=equipment.map(e=>`
+    <button class="tog" onclick="toggleArr(selEquipment,'${e.id}');buildFormGrids()"
+      style="${selEquipment.includes(e.id)?`background:${e.color};color:#fff;border-color:${e.color}`:''}">${e.label}</button>`).join('');
+  buildEqCueFields();
+  // Custom tag groups
+  let ctHtml='';
+  tagGroups.forEach(g=>{
+    if(!g.tags.length)return;
+    const cur=selCustomTags[g.id]||[];
+    ctHtml+=`<div class="fg"><label style="color:${g.color}">${g.label}</label>
+      <div class="tog-grid">${g.tags.map(t=>`<button class="tog" onclick="toggleCustomTag('${g.id}','${t.id}');buildFormGrids()"
+        style="${cur.includes(t.id)?tagStyle(g.color,false):''}">${t.label}</button>`).join('')}
+      </div></div>`;
+  });
+  document.getElementById('customTagsForm').innerHTML=ctHtml;
+}
+
+function toggleArr(arr,id){const i=arr.indexOf(id);if(i>-1)arr.splice(i,1);else arr.push(id)}
+function toggleCustomTag(gid,tid){
+  if(!selCustomTags[gid])selCustomTags[gid]=[];
+  toggleArr(selCustomTags[gid],tid);
+}
+
+function buildEqCueFields(){
+  const saved={};
+  document.querySelectorAll('.eq-cue-group textarea').forEach(ta=>{saved[ta.dataset.eq]=ta.value});
+  document.getElementById('eqCueFields').innerHTML=selEquipment.map(eqId=>{
+    const eq=getEq(eqId);
+    return`<div class="eq-cue-group">
+      <div class="eq-cue-head" style="background:${eq.color}">${eq.label} &#8212; Verbal cue</div>
+      <textarea rows="4" data-eq="${eqId}" placeholder="Inhale to prepare. Exhale&#8230;">${esc(saved[eqId]||editCues[eqId]||'')}</textarea>
+    </div>`;
+  }).join('');
+}
+
+function openAddSheet(){
+  editId=null;editCues={};selMuscles=[];selEquipment=[];
+  selPhase=phases[0]?.id||'custom';selCustomTags={};
+  document.getElementById('sheetTitle').textContent='Add exercise';
+  document.getElementById('fName').value='';
+  document.getElementById('fZh').value='';
+  document.getElementById('fDiff').value='';
+  document.getElementById('fNotes').value='';
+  document.getElementById('deleteZone').innerHTML='';
+  buildFormGrids();
+  document.getElementById('sheetBg').classList.add('open');
+  setTimeout(()=>document.getElementById('fName').focus(),200);
+}
+
+function openEditSheet(){
+  if(!currentDetail)return;
+  const d=data.find(x=>x.id===currentDetail);
+  editId=d.id;editCues={...(d.cues||{})};
+  selMuscles=[...(d.muscles||[])];
+  selEquipment=Object.keys(d.cues||{});
+  selPhase=d.phase||(phases[0]?.id||'custom');
+  selCustomTags=JSON.parse(JSON.stringify(d.customTags||{}));
+  document.getElementById('sheetTitle').textContent='Edit exercise';
+  document.getElementById('fName').value=d.name;
+  document.getElementById('fZh').value=d.zh||'';
+  document.getElementById('fDiff').value=d.diff||'';
+  document.getElementById('fNotes').value=d.notes||'';
+  document.getElementById('deleteZone').innerHTML=`<button class="btn-del-full" onclick="deleteEntry(${d.id})">Delete this exercise</button>`;
+  buildFormGrids();
+  document.getElementById('sheetBg').classList.add('open');
+}
+
+function closeSheet(){document.getElementById('sheetBg').classList.remove('open')}
+
+function saveEntry(){
+  const name=document.getElementById('fName').value.trim();
+  if(!name){showToast('Please enter an exercise name');return}
+  const cues={};
+  document.querySelectorAll('.eq-cue-group textarea').forEach(ta=>{const v=ta.value.trim();if(v)cues[ta.dataset.eq]=v});
+  const entry={name,zh:document.getElementById('fZh').value.trim(),phase:selPhase,muscles:[...selMuscles],cues,diff:document.getElementById('fDiff').value.trim(),customTags:JSON.parse(JSON.stringify(selCustomTags)),notes:document.getElementById('fNotes').value.trim()};
+  if(editId){
+    const i=data.findIndex(x=>x.id===editId);
+    data[i]={...data[i],...entry};
+    currentDetail=editId;
+    const d=data.find(x=>x.id===editId);
+    document.getElementById('detailTitle').textContent=d.name;
+    const eqs=Object.keys(d.cues||{});
+    if(!eqs.includes(activeEqTab[editId]))activeEqTab[editId]=eqs[0]||null;
+    renderDetail(d);showToast('Saved &#10003;');
+  }else{
+    data.push({id:nextId++,...entry});showToast('Added &#10003;');
+  }
+  closeSheet();renderCards();
+}
+
+function deleteEntry(id){
+  if(!confirm('Delete this exercise?'))return;
+  data=data.filter(x=>x.id!==id);
+  closeSheet();backToList();showToast('Deleted');
+}
+
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// IMPORT / EXPORT
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function exportJSON(){
+  const blob=new Blob([JSON.stringify({version:4,phases,muscles,equipment,tagGroups,data},null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='pilates_cues.json';
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  showToast('Exported &#10003;');
+}
+function importJSON(e){
+  const file=e.target.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=ev=>{
+    try{
+      const p=JSON.parse(ev.target.result);
+      if(p.phases)phases=p.phases;
+      if(p.muscles)muscles=p.muscles;
+      if(p.equipment)equipment=p.equipment;
+      if(p.tagGroups)tagGroups=p.tagGroups;
+      const imported=p.data||p;
+      if(!Array.isArray(imported))throw new Error();
+      data=imported.map(d=>({muscles:[],cues:{},customTags:{},...d}));
+      nextId=data.reduce((m,d)=>Math.max(m,d.id||0),0)+1;
+      activeFilters={phase:'all',muscle:'all',eq:'all'};customFilters={};
+      showScreen('exercises');showToast(`Imported ${data.length} exercises &#10003;`);
+    }catch{showToast('Import failed &#8212; invalid JSON');}
+  };
+  reader.readAsText(file);e.target.value='';
+}
+
+
+function checkLock(){
+  const val=document.getElementById('lockInput').value;
+  let h=0;
+  for(let i=0;i<val.length;i++){h=Math.imul(31,h)+val.charCodeAt(i)|0;}
+  if(h===1563160323){
+    document.getElementById('lockScreen').style.display='none';
+    document.getElementById('app').style.display='flex';
+  } else {
+    document.getElementById('lockErr').textContent='Incorrect password';
+    document.getElementById('lockInput').value='';
+    document.getElementById('lockInput').focus();
+  }
+}
+setTimeout(()=>document.getElementById('lockInput').focus(),100);
+
+document.getElementById('sheetBg').addEventListener('click',function(e){if(e.target===this)closeSheet()});
+document.getElementById('settingsSheetBg').addEventListener('click',function(e){if(e.target===this)closeSS()});
+renderCards();
+</script>
+</body>
+</html>
