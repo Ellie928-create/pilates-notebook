@@ -1,4 +1,4 @@
-&#65279;<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -189,7 +189,7 @@ nav{height:var(--bottom-h);min-height:var(--bottom-h);border-top:1px solid var(-
   <div class="lock-box">
     <div class="lock-logo">Pilates <span>Cue Notebook</span></div>
     <div class="lock-sub">Enter password to continue</div>
-    <input class="lock-input" type="password" id="lockInput" maxlength="20" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" onkeydown="if(event.key==='Enter')checkLock()">
+    <input class="lock-input" type="password" id="lockInput" maxlength="20" placeholder="••••••" onkeydown="if(event.key==='Enter')checkLock()">
     <button class="lock-btn" onclick="checkLock()">Unlock</button>
     <div class="lock-err" id="lockErr"></div>
   </div>
@@ -208,7 +208,7 @@ nav{height:var(--bottom-h);min-height:var(--bottom-h);border-top:1px solid var(-
     <div class="search-bar">
       <div class="search-inner">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="searchInput" placeholder="Search exercise, muscle, cue&#8230;" oninput="renderCards()">
+        <input type="text" id="searchInput" placeholder="Search exercise, muscle, cue…" oninput="renderCards()">
       </div>
     </div>
     <div id="allFilterRows"></div>
@@ -245,18 +245,18 @@ nav{height:var(--bottom-h);min-height:var(--bottom-h);border-top:1px solid var(-
   <div id="ioScreen" class="screen">
     <div class="io-body">
       <div class="io-card">
-        <h4>&#128190; Export data</h4>
-        <p>&#20786;&#23384;&#25152;&#26377;&#21475;&#20196;&#36039;&#26009;&#12289;&#33258;&#35330;&#20998;&#39006;&#21644;&#27161;&#31844;&#32676;&#32068;&#25104; JSON &#27284;&#26696;&#12290;</p>
-        <button class="io-btn io-export" onclick="exportJSON()">&#11015; Export JSON</button>
+        <h4>💾 Export data</h4>
+        <p>儲存所有口令資料、自訂分類和標籤群組成 JSON 檔案。</p>
+        <button class="io-btn io-export" onclick="exportJSON()">⬇ Export JSON</button>
       </div>
       <div class="io-card">
-        <h4>&#128194; Import data</h4>
-        <p>&#36617;&#20837;&#20043;&#21069;&#21295;&#20986;&#30340; JSON&#65292;&#24674;&#24489;&#20840;&#37096;&#36039;&#26009;&#12290;<br><strong style="color:#A32D2D">&#27880;&#24847;&#65306;&#26371;&#35206;&#33995;&#29694;&#26377;&#36039;&#26009;&#12290;</strong></p>
-        <label class="io-btn io-import" style="cursor:pointer">&#11014; Import JSON<input type="file" accept=".json" style="display:none" onchange="importJSON(event)"></label>
+        <h4>📂 Import data</h4>
+        <p>載入之前匯出的 JSON，恢復全部資料。<br><strong style="color:#A32D2D">注意：會覆蓋現有資料。</strong></p>
+        <label class="io-btn io-import" style="cursor:pointer">⬆ Import JSON<input type="file" accept=".json" style="display:none" onchange="importJSON(event)"></label>
       </div>
       <div class="io-card" style="background:var(--surface2)">
-        <h4 style="color:var(--text2)">&#20351;&#29992;&#35498;&#26126;</h4>
-        <p>&#32232;&#36655;&#23436;&#24460;&#35352;&#24471; Export&#65292;&#19979;&#27425;&#38283;&#21855;&#24460; Import &#21363;&#21487;&#24674;&#24489;&#12290;JSON &#25165;&#26159;&#20320;&#30340;&#31558;&#35352;&#26412;&#65292;HTML &#21482;&#26159;&#24037;&#20855;&#12290;</p>
+        <h4 style="color:var(--text2)">使用說明</h4>
+        <p>編輯完後記得 Export，下次開啟後 Import 即可恢復。JSON 才是你的筆記本，HTML 只是工具。</p>
       </div>
     </div>
   </div>
@@ -286,17 +286,17 @@ nav{height:var(--bottom-h);min-height:var(--bottom-h);border-top:1px solid var(-
 <div class="sheet-bg" id="sheetBg">
   <div class="sheet">
     <div class="sheet-handle"></div>
-    <div class="sheet-head"><h3 id="sheetTitle">Add exercise</h3><button class="sheet-close" onclick="closeSheet()">&#10005;</button></div>
+    <div class="sheet-head"><h3 id="sheetTitle">Add exercise</h3><button class="sheet-close" onclick="closeSheet()">✕</button></div>
     <div class="sheet-body">
       <div class="fg"><label>Exercise name (English) *</label><input type="text" id="fName" placeholder="e.g. Elephant"></div>
-      <div class="fg"><label>&#20013;&#25991;&#21517;&#31281;</label><input type="text" id="fZh" placeholder="e.g. &#22823;&#35937;&#24335;"></div>
+      <div class="fg"><label>中文名稱</label><input type="text" id="fZh" placeholder="e.g. 大象式"></div>
       <div class="fg"><label>Phase</label><div class="tog-grid" id="phaseGrid"></div></div>
       <div class="fg"><label>Primary muscles</label><div class="tog-grid" id="muscleGrid"></div></div>
       <div class="fg"><label>Equipment</label><div class="tog-grid" id="eqGrid"></div></div>
       <div class="eq-cue-fields" id="eqCueFields"></div>
-      <div class="fg"><label>Key difference between equipment</label><textarea id="fDiff" rows="3" placeholder="Reformer: posterior chain. Chair: eccentric control&#8230;"></textarea></div>
+      <div class="fg"><label>Key difference between equipment</label><textarea id="fDiff" rows="3" placeholder="Reformer: posterior chain. Chair: eccentric control…"></textarea></div>
       <div id="customTagsForm"></div>
-      <div class="fg"><label>Teaching notes&#65288;&#20013;&#25991;&#21487;&#65289;</label><textarea id="fNotes" rows="2" placeholder="&#24120;&#35211;&#37679;&#35492;&#12289;&#20462;&#27491;&#25552;&#31034;&#8230;"></textarea></div>
+      <div class="fg"><label>Teaching notes（中文可）</label><textarea id="fNotes" rows="2" placeholder="常見錯誤、修正提示…"></textarea></div>
     </div>
     <div class="sheet-footer">
       <button class="btn-cancel" onclick="closeSheet()">Cancel</button>
@@ -310,7 +310,7 @@ nav{height:var(--bottom-h);min-height:var(--bottom-h);border-top:1px solid var(-
 <div class="sheet-bg" id="settingsSheetBg">
   <div class="sheet mini-sheet">
     <div class="sheet-handle"></div>
-    <div class="sheet-head"><h3 id="ssTitle">Edit</h3><button class="sheet-close" onclick="closeSS()">&#10005;</button></div>
+    <div class="sheet-head"><h3 id="ssTitle">Edit</h3><button class="sheet-close" onclick="closeSS()">✕</button></div>
     <div class="sheet-body" id="ssBody"></div>
     <div class="sheet-footer">
       <button class="btn-cancel" onclick="closeSS()">Cancel</button>
@@ -322,9 +322,9 @@ nav{height:var(--bottom-h);min-height:var(--bottom-h);border-top:1px solid var(-
 <div class="toast" id="toast"></div>
 
 <script>
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // DEFAULT DATA
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 let phases=[
   {id:'warmup',label:'Warm-up',color:'#0F6E56'},
   {id:'core',label:'Core / Abs',color:'#534AB7'},
@@ -361,31 +361,31 @@ let tagGroups=[
 ];
 
 let data=[
-  {id:1,name:'Footwork &#8212; Parallel Heels',zh:'&#36393;&#33139;&#36319;&#65288;&#24179;&#34892;&#65289;',phase:'warmup',muscles:['hamstrings','glutes','quads'],
+  {id:1,name:'Footwork — Parallel Heels',zh:'踩腳跟（平行）',phase:'warmup',muscles:['hamstrings','glutes','quads'],
    cues:{reformer:'Inhale to prepare. Exhale, press your heels into the bar and lengthen your legs long. Feel the back of your thighs connect. Inhale, bend your knees and return with control. Keep your pelvis neutral throughout.',
-         chair:'Stand with heels on the pedal edge. Exhale, press the pedal down through your heels &#8212; control the eccentric phase. Inhale, resist the spring and return. Keep your hips square and spine upright.'},
+         chair:'Stand with heels on the pedal edge. Exhale, press the pedal down through your heels — control the eccentric phase. Inhale, resist the spring and return. Keep your hips square and spine upright.'},
    diff:'Reformer: supine, bilateral, spring pulls you back. Chair: upright load, eccentric challenge on return, greater balance and ankle stability demand.',
-   customTags:{tg_level:['t_l1'],tg_exam:['t_ex1']},notes:'&#26680;&#24515;&#24202;&#33181;&#33995;&#26041;&#21521;&#23565;&#31532;&#20108;&#33139;&#36286;'},
-  {id:2,name:'Elephant',zh:'&#22823;&#35937;&#24335;',phase:'stretch',muscles:['hamstrings','back','core'],
+   customTags:{tg_level:['t_l1'],tg_exam:['t_ex1']},notes:'核心床膝蓋方向對第二腳趾'},
+  {id:2,name:'Elephant',zh:'大象式',phase:'stretch',muscles:['hamstrings','back','core'],
    cues:{reformer:'Press your heels into the footbar, round your spine into a C-curve. Exhale, push the carriage back from your heels. Inhale, pull it in. Feel the posterior chain lengthen.',
          chair:'Stand facing the chair, hands on top. Hinge from your hips, spine long. Exhale, press the pedal down with one foot. Inhale, resist as you return.'},
    diff:'Reformer: bilateral, C-curve spine, decompression focus. Chair: unilateral, hip hinge (spine extended), more glute and standing leg demand.',
-   customTags:{tg_level:['t_l1','t_l2'],tg_exam:['t_ex1','t_ex2']},notes:'&#26680;&#24515;&#24202;&#33034;&#26894;&#22291;&#24359;&#65307;&#26885;&#23376;&#33034;&#26894;&#24310;&#20280; &#8212; &#24046;&#30064;&#22823;'},
-  {id:3,name:'The Hundred',zh:'&#19968;&#30334;&#24335;',phase:'core',muscles:['core','hipflexors'],
+   customTags:{tg_level:['t_l1','t_l2'],tg_exam:['t_ex1','t_ex2']},notes:'核心床脊椎圓弧；椅子脊椎延伸 — 差異大'},
+  {id:3,name:'The Hundred',zh:'一百式',phase:'core',muscles:['core','hipflexors'],
    cues:{reformer:'Curl your head and chest up, scoop your abdominals in and up. Extend your legs to your working level. Pump your arms: inhale for five, exhale for five.',
          cadillac:'Lie supine, hold the push-through bar. Curl head and chest, legs to tabletop. Pump the arms alongside your body. Inhale 5, exhale 5.'},
    diff:'Reformer: straps load arm pump and leg position. Cadillac: bar gives proprioceptive feedback; no leg spring so core demand is higher.',
-   customTags:{tg_level:['t_l1'],tg_exam:['t_ex1']},notes:'&#33151;&#30340;&#39640;&#24230;&#26681;&#25818;&#33145;&#37096;&#24375;&#24230;&#35519;&#25972;'},
-  {id:4,name:'Short Spine',zh:'&#30701;&#33034;&#26894;',phase:'core',muscles:['core','back','hamstrings'],
-   cues:{reformer:'Feet in straps. Inhale, float the hips and roll overhead &#8212; knees bend toward shoulders. Exhale, articulate the spine down one vertebra at a time. Tail first, then lumbar, mid-back.',
+   customTags:{tg_level:['t_l1'],tg_exam:['t_ex1']},notes:'腿的高度根據腹部強度調整'},
+  {id:4,name:'Short Spine',zh:'短脊椎',phase:'core',muscles:['core','back','hamstrings'],
+   cues:{reformer:'Feet in straps. Inhale, float the hips and roll overhead — knees bend toward shoulders. Exhale, articulate the spine down one vertebra at a time. Tail first, then lumbar, mid-back.',
          cadillac:'Legs in short loops on the rollback bar. Inhale, draw legs overhead, knees bend. Exhale, peel the spine down sequentially.'},
-   diff:'Reformer: continuous spring traction &#8212; use it. Cadillac: bar height changes leverage; same articulation cues but range may differ.',
-   customTags:{tg_level:['t_l2'],tg_exam:['t_ex2']},notes:'&#33034;&#26894;&#31680;&#31680;&#20998;&#38626;&#65292;&#19981;&#35201;&#25972;&#22602;&#33853;&#19979;'},
-  {id:5,name:'Mermaid',zh:'&#32654;&#20154;&#39770;',phase:'stretch',muscles:['core','back','shoulders'],
+   diff:'Reformer: continuous spring traction — use it. Cadillac: bar height changes leverage; same articulation cues but range may differ.',
+   customTags:{tg_level:['t_l2'],tg_exam:['t_ex2']},notes:'脊椎節節分離，不要整塊落下'},
+  {id:5,name:'Mermaid',zh:'美人魚',phase:'stretch',muscles:['core','back','shoulders'],
    cues:{reformer:'Sit sideways, one hand on the footbar. Inhale, reach the top arm up and over. Exhale, pull the carriage back in as you return upright. Both sitting bones grounded.',
          chair:'Sit sideways, hand on the pedal. Inhale, reach the opposite arm overhead and let the pedal lower slowly. Exhale, press back up as you return.'},
-   diff:'Reformer: carriage moves away creating lateral traction. Chair: pedal descends under eccentric load &#8212; greater strength demand.',
-   customTags:{tg_level:['t_l1','t_l2'],tg_exam:['t_ex2']},notes:'&#22352;&#39592;&#19981;&#38626;&#22320;&#25165;&#33021;&#30495;&#27491;&#20596;&#23624;'}
+   diff:'Reformer: carriage moves away creating lateral traction. Chair: pedal descends under eccentric load — greater strength demand.',
+   customTags:{tg_level:['t_l1','t_l2'],tg_exam:['t_ex2']},notes:'坐骨不離地才能真正側屈'}
 ];
 let nextId=6;
 let editId=null;
@@ -400,9 +400,9 @@ let activeEqTab={};
 let editCues={};
 let ssType=null,ssId=null,ssGroupId=null;
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // UTILS
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function uid(){return 'id'+Date.now().toString(36)+Math.random().toString(36).slice(2,5)}
 function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
 function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),2200)}
@@ -413,9 +413,9 @@ function getEq(id){return equipment.find(e=>e.id===id)||{label:id,color:'#888'}}
 function getGroup(id){return tagGroups.find(g=>g.id===id)}
 function getTag(groupId,tagId){const g=getGroup(groupId);return g&&g.tags.find(t=>t.id===tagId)}
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // NAVIGATION
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function showScreen(name){
   document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
@@ -431,9 +431,9 @@ function showScreen(name){
 }
 function backToList(){showScreen('exercises')}
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // FILTER ROWS
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function renderFilterRows(){
   const pc={},mc={},ec={};
   data.forEach(d=>{
@@ -478,9 +478,9 @@ function renderFilterRows(){
 function setF(type,val){activeFilters[type]=val;renderCards()}
 function setCF(gid,val){customFilters[gid]=val;renderCards()}
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // CARDS
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function renderCards(){
   renderFilterRows();
   const q=document.getElementById('searchInput').value.toLowerCase().trim();
@@ -522,9 +522,9 @@ function renderCards(){
   }).join('');
 }
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // DETAIL
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function openDetail(id){
   currentDetail=id;
   const d=data.find(x=>x.id===id);
@@ -567,9 +567,9 @@ function renderDetail(d){
 }
 function switchEqTab(id,eq){activeEqTab[id]=eq;renderDetail(data.find(x=>x.id===id))}
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // ANATOMY
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function renderAnatomy(){
   let html='';
   muscles.forEach(m=>{
@@ -587,9 +587,9 @@ function renderAnatomy(){
   document.getElementById('anatomyBody').innerHTML=html||'<div class="empty-state">No exercises yet</div>';
 }
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // EQUIPMENT SCREEN
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function renderEquipment(){
   let html='';
   equipment.forEach(eq=>{
@@ -607,9 +607,9 @@ function renderEquipment(){
   document.getElementById('equipmentBody').innerHTML=html||'<div class="empty-state">No exercises yet</div>';
 }
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // SETTINGS
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function renderSettings(){
   function usageCount(type,id){
     if(type==='phase')return data.filter(d=>d.phase===id).length;
@@ -625,12 +625,12 @@ function renderSettings(){
         <div class="si-name">${esc(item.label)}</div>
         <div class="si-count">${usageCount(type,item.id)} use${usageCount(type,item.id)!==1?'s':''}</div>
         <div class="si-actions">
-          <button class="si-btn" onclick="openSS('${type}','${item.id}')">&#9999;</button>
-          <button class="si-btn del" onclick="deleteCat('${type}','${item.id}')">&#10005;</button>
+          <button class="si-btn" onclick="openSS('${type}','${item.id}')">✏</button>
+          <button class="si-btn del" onclick="deleteCat('${type}','${item.id}')">✕</button>
         </div>
       </div>`).join('')}
       <div class="add-row">
-        <input type="text" id="newLabel-${type}" placeholder="New name&#8230;">
+        <input type="text" id="newLabel-${type}" placeholder="New name…">
         <input type="color" id="newColor-${type}" value="#534AB7">
         <button class="btn-add" onclick="addCat('${type}')">Add</button>
       </div>
@@ -640,10 +640,10 @@ function renderSettings(){
   // Custom tag groups
   let ctgHtml=`<div class="settings-section">
     <div class="settings-title">Custom tag groups
-      <span style="font-size:11px;color:var(--text3);font-weight:400;text-transform:none;letter-spacing:0">&#33258;&#35330;&#27161;&#31844;&#32676;&#32068;</span>
+      <span style="font-size:11px;color:var(--text3);font-weight:400;text-transform:none;letter-spacing:0">自訂標籤群組</span>
     </div>
     <div class="new-group-row">
-      <input type="text" id="newGroupLabel" placeholder="New group name&#8230; (e.g. Level, &#32771;&#35430;&#37325;&#40670;)">
+      <input type="text" id="newGroupLabel" placeholder="New group name… (e.g. Level, 考試重點)">
       <input type="color" id="newGroupColor" value="#185FA5">
       <button class="btn-add" onclick="addGroup()">Add group</button>
     </div>
@@ -652,19 +652,19 @@ function renderSettings(){
         <div class="swatch" style="background:${g.color}"></div>
         <div class="ctg-card-title">${esc(g.label)}</div>
         <div class="si-actions">
-          <button class="si-btn" onclick="openSS('group','${g.id}')">&#9999;</button>
-          <button class="si-btn del" onclick="deleteGroup('${g.id}')">&#10005;</button>
+          <button class="si-btn" onclick="openSS('group','${g.id}')">✏</button>
+          <button class="si-btn del" onclick="deleteGroup('${g.id}')">✕</button>
         </div>
       </div>
       <div class="ctg-tags-area">
         ${g.tags.map(t=>`<span class="ctg-tag" style="${tagStyle(g.color,false)}">
           ${esc(t.label)}
-          <button class="ctg-tag-del" onclick="deleteTag('${g.id}','${t.id}')" title="Remove">&#10005;</button>
+          <button class="ctg-tag-del" onclick="deleteTag('${g.id}','${t.id}')" title="Remove">✕</button>
         </span>`).join('')}
-        ${g.tags.length===0?`<span style="font-size:12px;color:var(--text3)">No tags yet &#8212; add below</span>`:''}
+        ${g.tags.length===0?`<span style="font-size:12px;color:var(--text3)">No tags yet — add below</span>`:''}
       </div>
       <div class="ctg-add-row">
-        <input type="text" id="newTag-${g.id}" placeholder="Add tag&#8230; (e.g. Level 1)">
+        <input type="text" id="newTag-${g.id}" placeholder="Add tag… (e.g. Level 1)">
         <button onclick="addTag('${g.id}')">Add</button>
       </div>
     </div>`).join('')}
@@ -686,7 +686,7 @@ function addCat(type){
   if(type==='muscle')muscles.push({id,label,color});
   if(type==='equipment')equipment.push({id,label,color});
   document.getElementById(`newLabel-${type}`).value='';
-  renderSettings();showToast(`${label} added &#10003;`);
+  renderSettings();showToast(`${label} added ✓`);
 }
 
 function deleteCat(type,id){
@@ -713,7 +713,7 @@ function addGroup(){
   if(!label){showToast('Enter a group name');return}
   tagGroups.push({id:'tg_'+uid(),label,color,tags:[]});
   document.getElementById('newGroupLabel').value='';
-  renderSettings();showToast(`Group "${label}" added &#10003;`);
+  renderSettings();showToast(`Group "${label}" added ✓`);
 }
 
 function deleteGroup(gid){
@@ -731,7 +731,7 @@ function addTag(gid){
   const g=getGroup(gid);if(!g)return;
   g.tags.push({id:'t_'+uid(),label});
   input.value='';
-  renderSettings();showToast(`Tag "${label}" added &#10003;`);
+  renderSettings();showToast(`Tag "${label}" added ✓`);
 }
 
 function deleteTag(gid,tid){
@@ -741,9 +741,9 @@ function deleteTag(gid,tid){
   renderSettings();showToast('Tag deleted');
 }
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // SETTINGS MINI SHEET (edit name/color)
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function openSS(type,id){
   ssType=type;ssId=id;
   const listMap={phase:phases,muscle:muscles,equipment:equipment};
@@ -767,12 +767,12 @@ function saveSS(){
   if(ssType==='group'){item=getGroup(ssId);}
   else{item=listMap[ssType]?.find(x=>x.id===ssId);}
   if(item){item.label=label;item.color=color;}
-  closeSS();renderSettings();renderCards();showToast('Saved &#10003;');
+  closeSS();renderSettings();renderCards();showToast('Saved ✓');
 }
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // EXERCISE SHEET
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function buildFormGrids(){
   // Phase
   document.getElementById('phaseGrid').innerHTML=phases.map(p=>`
@@ -812,8 +812,8 @@ function buildEqCueFields(){
   document.getElementById('eqCueFields').innerHTML=selEquipment.map(eqId=>{
     const eq=getEq(eqId);
     return`<div class="eq-cue-group">
-      <div class="eq-cue-head" style="background:${eq.color}">${eq.label} &#8212; Verbal cue</div>
-      <textarea rows="4" data-eq="${eqId}" placeholder="Inhale to prepare. Exhale&#8230;">${esc(saved[eqId]||editCues[eqId]||'')}</textarea>
+      <div class="eq-cue-head" style="background:${eq.color}">${eq.label} — Verbal cue</div>
+      <textarea rows="4" data-eq="${eqId}" placeholder="Inhale to prepare. Exhale…">${esc(saved[eqId]||editCues[eqId]||'')}</textarea>
     </div>`;
   }).join('');
 }
@@ -866,9 +866,9 @@ function saveEntry(){
     document.getElementById('detailTitle').textContent=d.name;
     const eqs=Object.keys(d.cues||{});
     if(!eqs.includes(activeEqTab[editId]))activeEqTab[editId]=eqs[0]||null;
-    renderDetail(d);showToast('Saved &#10003;');
+    renderDetail(d);showToast('Saved ✓');
   }else{
-    data.push({id:nextId++,...entry});showToast('Added &#10003;');
+    data.push({id:nextId++,...entry});showToast('Added ✓');
   }
   closeSheet();renderCards();
 }
@@ -879,14 +879,14 @@ function deleteEntry(id){
   closeSheet();backToList();showToast('Deleted');
 }
 
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 // IMPORT / EXPORT
-// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+// ════════════════════════════════
 function exportJSON(){
   const blob=new Blob([JSON.stringify({version:4,phases,muscles,equipment,tagGroups,data},null,2)],{type:'application/json'});
   const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='pilates_cues.json';
   document.body.appendChild(a);a.click();document.body.removeChild(a);
-  showToast('Exported &#10003;');
+  showToast('Exported ✓');
 }
 function importJSON(e){
   const file=e.target.files[0];if(!file)return;
@@ -903,8 +903,8 @@ function importJSON(e){
       data=imported.map(d=>({muscles:[],cues:{},customTags:{},...d}));
       nextId=data.reduce((m,d)=>Math.max(m,d.id||0),0)+1;
       activeFilters={phase:'all',muscle:'all',eq:'all'};customFilters={};
-      showScreen('exercises');showToast(`Imported ${data.length} exercises &#10003;`);
-    }catch{showToast('Import failed &#8212; invalid JSON');}
+      showScreen('exercises');showToast(`Imported ${data.length} exercises ✓`);
+    }catch{showToast('Import failed — invalid JSON');}
   };
   reader.readAsText(file);e.target.value='';
 }
